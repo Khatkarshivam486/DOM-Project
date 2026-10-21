@@ -1,4 +1,7 @@
 {
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 1000,
+  "livePreview.autoRefreshPreview": "On Save"
   /**
    * Controls whether suggestions should be accepted on commit characters.
    * For example, in JavaScript, the semi-colon (;) can be a commit character that accepts a suggestion and types that character.
@@ -99,7 +102,7 @@
   /**
    * Controls the font size in pixels.
    */
-  "editor.fontSize": 20,
+  "editor.fontSize": 19,
   /**
    * Controls the font weight. Accepts 'normal' and 'bold' keywords or numbers values between '100' and '900'.
    */
@@ -199,7 +202,12 @@
    * Controls whether suggestions should automatically show up while typing.
    * Defaults to true.
    */
-  "editor.quickSuggestions": true
+  "editor.quickSuggestions": {
+    "comments": "on",
+    "strings": "on",
+    "other": "on"
+  },
+  "terminal.integrated.fontSize": 14
   /**
    * Controls the delay in milliseconds after which quick suggestions will show up.
    * Defaults to 10 (ms).
